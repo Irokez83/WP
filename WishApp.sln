@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WishApp", "WishApp\WishApp.csproj", "{A95AF349-9A61-4B4A-8AC9-F25A8EE1F702}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{3FFFE528-E77C-40AA-8316-8F5D942005D9}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{8B277EFF-FCCD-49C7-AAE2-6A126E8EE870}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\WishApp-WAWS-dev.json = PublishScripts\Configurations\WishApp-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A95AF349-9A61-4B4A-8AC9-F25A8EE1F702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A95AF349-9A61-4B4A-8AC9-F25A8EE1F702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A95AF349-9A61-4B4A-8AC9-F25A8EE1F702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A95AF349-9A61-4B4A-8AC9-F25A8EE1F702}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B277EFF-FCCD-49C7-AAE2-6A126E8EE870} = {3FFFE528-E77C-40AA-8316-8F5D942005D9}
+	EndGlobalSection
+EndGlobal
