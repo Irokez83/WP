@@ -18,7 +18,7 @@ namespace WishApp.Models
         public Occasionals Occasions { get; set; }
 
         [Display(Name = "Type in your gift expectation:")]
-        [StringLength(200, ErrorMessage = "No more than 200 characters allowed for preference description")]
+        [StringLength(50, ErrorMessage = "No more than 50 characters allowed for preference description")]
         public string UserPreference { get; set; }
 
         [Display(Name = "Flowers YES/NO")]

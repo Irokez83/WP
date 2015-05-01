@@ -18,7 +18,8 @@ namespace WishApp.Controllers
         // GET: Users
         public async Task<ActionResult> Index()
         {
-            return View(await db.Users.ToListAsync());
+            var userList = db.Users.OrderBy(o => o.Email);
+            return View(await userList.ToListAsync());
         }
 
         // GET: Users/Details/5
@@ -53,7 +54,7 @@ namespace WishApp.Controllers
             {
                 db.Users.Add(user);
                 await db.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return RedirectToAction("Create", "Preferences");
             }
 
             return View(user);
