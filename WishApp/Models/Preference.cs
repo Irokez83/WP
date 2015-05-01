@@ -14,11 +14,14 @@ namespace WishApp.Models
         [Key]
         public int PreferenceId { get; set; }
 
+        [EnumDataType(typeof(Occasionals))]
         [Display(Name = "Please choose occasion:")]
         public Occasionals Occasions { get; set; }
 
         [Display(Name = "Type in your gift expectation:")]
         [StringLength(50, ErrorMessage = "No more than 50 characters allowed for preference description")]
+        [DataType(DataType.Text)]
+        [RegularExpression("^([0-9A-Za-z #.,])+$", ErrorMessage = "Preference must be properly formatted (no unusual characters allowed).")]
         public string UserPreference { get; set; }
 
         [Display(Name = "Flowers YES/NO")]

@@ -18,7 +18,7 @@ namespace WishApp.Controllers
         // GET: Preferences
         public async Task<ActionResult> Index()
         {
-            var preferences = db.Preferences.Include(p => p.User).OrderBy(o => o.User.Email); ;
+            var preferences = db.Preferences.Include(p => p.User).OrderBy(o => o.User.Email);
             return View(await preferences.ToListAsync());
         }
 

@@ -13,6 +13,7 @@ namespace WishApp.Models
 
         [Required]
         [DataType(DataType.EmailAddress)]
+        [StringLength(50, ErrorMessage = "No more than 50 characters allowed for e-mail")]
         [Display(Name = "Please provide valid E-mail address")]
         public string Email { get; set; }
         
