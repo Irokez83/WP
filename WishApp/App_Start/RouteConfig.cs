@@ -16,7 +16,7 @@ namespace WishApp
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Users", action = "Create", id = UrlParameter.Optional }
+                defaults: new { controller = "Extra", action = "About", id = UrlParameter.Optional }
             );
         }
     }

@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                 @Html.ActionLink("Home", "Index", "Users", new { area = "" }, new { @class = "navbar-brand" })
+                 @Html.ActionLink("Home", "About", "Extra", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -25,8 +25,8 @@
                     <li>@Html.ActionLink("User List", "Index", "Users")</li>
                     <li>@Html.ActionLink("Add Preference", "Create", "Preferences")</li>
                     <li>@Html.ActionLink("Preference List", "Index", "Preferences")</li>
-                    <li>@Html.ActionLink("Our Project", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Our Project", "Home", "Extra")</li>
+                    <li>@Html.ActionLink("Contact Us", "Contact", "Extra")</li>
                 </ul>
             </div>
         </div>

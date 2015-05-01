@@ -40,7 +40,7 @@ namespace WishApp.Controllers
         // GET: Preferences/Create
         public ActionResult Create()
         {
-            ViewBag.UserId = new SelectList(db.Users, "UserId", "Email");
+            ViewBag.UserId = new SelectList(db.Users.OrderBy(o => o.Email), "UserId", "Email");
             return View();
         }
 
