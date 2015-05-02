@@ -76,8 +76,6 @@ namespace WishApp.Controllers
         }
 
         // POST: Users/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit([Bind(Include = "UserId,Email")] User user)
@@ -91,7 +89,7 @@ namespace WishApp.Controllers
             return View(user);
         }
 
-        // GET: Users/Delete/5
+        // GET: Users/Delete/
         public async Task<ActionResult> Delete(int? id)
         {
             if (id == null)
@@ -106,7 +104,7 @@ namespace WishApp.Controllers
             return View(user);
         }
 
-        // POST: Users/Delete/5
+        // POST: Users/Delete/
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
@@ -115,6 +113,23 @@ namespace WishApp.Controllers
             db.Users.Remove(user);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
+        }
+
+        //Method to check whether E-mail(User) is unique
+        public ActionResult IsEmailAvailable(string Email)
+        {
+            using (WishAppContext db = new WishAppContext())
+            {
+                try
+                {
+                    var email = db.Users.Single(m => m.Email == Email);
+                    return Json(false, JsonRequestBehavior.AllowGet);
+                }
+                catch (Exception)
+                {
+                    return Json(true, JsonRequestBehavior.AllowGet);
+                }
+            }
         }
 
         protected override void Dispose(bool disposing)

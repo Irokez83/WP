@@ -192,7 +192,6 @@
     <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\Preferences\Create.cshtml" />
     <Content Include="Views\Preferences\Delete.cshtml" />
-    <Content Include="Views\Preferences\Details.cshtml" />
     <Content Include="Views\Preferences\Edit.cshtml" />
     <Content Include="Views\Preferences\Index.cshtml" />
     <Content Include="Views\Extra\Home.cshtml" />

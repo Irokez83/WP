@@ -22,21 +22,6 @@ namespace WishApp.Controllers
             return View(await preferences.ToListAsync());
         }
 
-        // GET: Preferences/Details/5
-        public async Task<ActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Preference preference = await db.Preferences.FindAsync(id);
-            if (preference == null)
-            {
-                return HttpNotFound();
-            }
-            return View(preference);
-        }
-
         // GET: Preferences/Create
         public ActionResult Create()
         {
