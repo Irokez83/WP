@@ -23,9 +23,15 @@
             @Html.DisplayFor(modelItem => item.Email)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.UserId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.UserId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.UserId })
+            <div class="myButtonCRUD">
+                @Html.ActionLink("Details", "Details", new { id = item.UserId })
+            </div>
+            <div class="myButtonCRUD">
+                @Html.ActionLink("Edit", "Edit", new { id = item.UserId })
+            </div>
+            <div class="myButtonCRUD">
+                @Html.ActionLink("Delete", "Delete", new { id = item.UserId })
+            </div>
         </td>
     </tr>
 }

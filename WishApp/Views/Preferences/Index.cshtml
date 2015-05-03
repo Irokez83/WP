@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h3>Preference List Page</h3>
+<h3>Preference  List  Page</h3>
 <br/>
 
 <p>
@@ -44,7 +44,9 @@
             @Html.DisplayFor(modelItem => item.Flowers)
         </td>
         <td>
-            @Html.ActionLink("Delete", "Delete", new { id=item.PreferenceId })
+            <div class="myButtonCRUD">
+                @Html.ActionLink("Delete", "Delete", new { id = item.PreferenceId })
+            </div>
         </td>
     </tr>
 }
