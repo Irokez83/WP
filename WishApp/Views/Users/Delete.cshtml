@@ -4,8 +4,10 @@
     ViewBag.Title = "Delete";
 }
 
-
-<h1>Are you sure that you would like to delete this user?</h1>
+<h3>Delete User Page</h3>
+<br />
+<br />
+<h4>Are you sure that you would like to delete this user?</h4>
 
 <div>
 
@@ -26,7 +28,10 @@
 
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to User List", "Index")
+            <div class="myButton">
+                @Html.ActionLink("Cancel", "Index")
+            </div>
+            @*@Html.ActionLink("Back to User List", "Index")*@
         </div>
     }
 </div>

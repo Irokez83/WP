@@ -4,24 +4,27 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Preference List</h2>
+<h3>Preference List Page</h3>
+<br/>
 
 <p>
-    @Html.ActionLink("Create New Preference", "Create")
+    <div class="myButton">
+        @Html.ActionLink("Create New Preference", "Create")
+    </div>
 </p>
 <table class="table">
     <tr>
         <th>
-            <h3>E-mail</h3>
+            <h4>E-mail</h4>
         </th>
         <th>
-            <h3>Occasion</h3>
+            <h4>Occasion</h4>
         </th>
         <th>
-            <h3>Preference</h3>
+            <h4>Preference</h4>
         </th>
         <th>
-            <h3>Flowers</h3>
+            <h4>Flowers</h4>
         </th>
         <th></th>
     </tr>
@@ -41,8 +44,6 @@
             @Html.DisplayFor(modelItem => item.Flowers)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PreferenceId }) |
-            @*@Html.ActionLink("Details", "Details", new { id=item.PreferenceId }) |*@
             @Html.ActionLink("Delete", "Delete", new { id=item.PreferenceId })
         </td>
     </tr>

@@ -182,7 +182,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Extra\About.cshtml" />
+    <Content Include="Views\Extra\Home.cshtml" />
     <Content Include="Views\Extra\Contact.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Users\Create.cshtml" />
@@ -192,9 +192,8 @@
     <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\Preferences\Create.cshtml" />
     <Content Include="Views\Preferences\Delete.cshtml" />
-    <Content Include="Views\Preferences\Edit.cshtml" />
     <Content Include="Views\Preferences\Index.cshtml" />
-    <Content Include="Views\Extra\Home.cshtml" />
+    <Content Include="Views\Extra\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
