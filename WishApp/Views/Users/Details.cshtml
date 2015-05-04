@@ -4,9 +4,11 @@
     ViewBag.Title = "Details";
 }
 
-<br>
 
-<h2>User @Html.DisplayFor(model => model.Email) details: </h2> 
+<h3>User Details Page</h3>
+<br/>
+<br />
+<h4>User @Html.DisplayFor(model => model.Email)</h4> 
 
 @*<div>
     <h4>User</h4>
@@ -31,6 +33,10 @@
 <br>
 
 <p>
-    @*@Html.ActionLink("Edit", "Edit", new { id = Model.UserId }) |*@
-    @Html.ActionLink("Back to User List", "Index")
+    <div class="myButtonCRUD">
+        @Html.ActionLink("Edit Username", "Edit", new { id = Model.UserId })
+    </div>
+    <div class="myButtonCRUD">
+        @Html.ActionLink("Back to User List", "Index")
+    </div>
 </p>

@@ -6,18 +6,27 @@
     <title>@ViewBag.Title - Val & Niall EAD project</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <meta name="description" content="The description of my page" />
 </head>
 <body>
+
+
     <div class="navbar navbar-inverse navbar-fixed-top">
+
         <div class="container">
-            <div class="navbar-header">
+
+            <div align="center" class="header">
+                <h1>Wish Project</h1>
+            </div>
+
+            <div align="center" class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                 @Html.ActionLink("Home", "About", "Extra", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Home", "Home", "Extra", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -25,17 +34,18 @@
                     <li>@Html.ActionLink("User List", "Index", "Users")</li>
                     <li>@Html.ActionLink("Add Preference", "Create", "Preferences")</li>
                     <li>@Html.ActionLink("Preference List", "Index", "Preferences")</li>
-                    <li>@Html.ActionLink("Our Project", "Home", "Extra")</li>
+                    <li>@Html.ActionLink("Our Project", "About", "Extra")</li>
                     <li>@Html.ActionLink("Contact Us", "Contact", "Extra")</li>
                 </ul>
             </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - EAD MVC/API small project</p>
+            <p align="center">&copy; @DateTime.Now.Year - EAD MVC/API small project</p>
         </footer>
     </div>
 

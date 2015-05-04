@@ -1,20 +1,28 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Home";
 }
 
-<h2>About Wish Project</h2>
+<h3>Starting Page</h3>
 <br />
 
 <p>
+    Dear User,
+    <br />
+    Idea behind this project is to allow anyone (child, youth, adult) to inform other parties about best gift preferences
+    for your personal occasions. Your friends, relatives or strangers don't have to guess anymore what you may like to get for a
+    specific occasion. At the same time it will help to avoid receiving something unwanted (so you don't have to sell it on third-party websites
+    in order to get cash and buy something what you really want).
+    <br />
+    <br />
 
     Instructions: <br />
     1. Please register your Username (specify valid e-mail address).<br />
-    2. Then you're redirected to preferences page where you can specify your preferences:<br />
+    2. Then you're redirected to preferences page where you can specify your Preferences:<br />
     a. Choose your Username from drop-down list (registered on previous page),<br />
-    b. Choose your occasion from drop-down list (Birthday, Christmas, Anniversary, Valentines, Other),<br />
-    c. Manually specify your gift preferences for this occasion (and/or specify your Occasion together with Preferences if you have chosen Other in previous drop-down option),<br />
-    d. Tick box if you would like to get flowers on that occasion. <br />
-    3. Press create button in order to save your preferences.
+    b. Choose your Occasion from drop-down list (Birthday, Christmas, Anniversary, Valentines, Other),<br />
+    c. Manually specify your gift Preferences for this Occasion (and/or specify your Occasion together with Preferences if you have chosen Other in previous drop-down option),<br />
+    d. Tick box if you would like to get flowers on that Occasion. <br />
+    3. Press "Create" button in order to save your Preferences.
     <br />
     <br />
 
@@ -23,7 +31,16 @@
     2. You can download this application for your Windows Phone from Windows Store if you prefer mobile version.<br />
     3. Complaints, suggestions and compliments can be sent to site administrators from "Contact Us" link on top of the web page.
 
-    <br />
-
+    <h4>So please give it a try (click "Start" button below or "Create User" link  on top of the web page)...</h4>
 </p>
 
+<div class="myButton">
+    @Html.ActionLink("Start", "Create", "Users")
+</div>
+
+<br />
+<br />
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
