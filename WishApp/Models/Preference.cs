@@ -18,7 +18,7 @@ namespace WishApp.Models
         [Display(Name = "Please choose occasion:")]
         public Occasionals Occasions { get; set; }
 
-        [Display(Name = "Type in your gift expectation:")]
+        [Display(Name = "Type in your gift Preference:")]
         [StringLength(50, ErrorMessage = "No more than 50 characters allowed for preference description")]
         [DataType(DataType.Text)]
         [RegularExpression("^([0-9A-Za-z #.,])+$", ErrorMessage = "Preference must be properly formatted (no unusual characters allowed).")]

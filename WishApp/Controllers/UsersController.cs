@@ -40,6 +40,7 @@ namespace WishApp.Controllers
 
         // GET: Users/Create
         public ActionResult Create()
+
         {
             return View();
         }
