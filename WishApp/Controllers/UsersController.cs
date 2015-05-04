@@ -34,6 +34,7 @@ namespace WishApp.Controllers
             {
                 return HttpNotFound();
             }
+
             return View(user);
         }
 
