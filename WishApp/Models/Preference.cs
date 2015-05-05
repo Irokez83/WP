@@ -11,6 +11,7 @@ namespace WishApp.Models
 
     public class Preference
     {
+        //primary key declaring
         [Key]
         public int PreferenceId { get; set; }
 
@@ -27,7 +28,7 @@ namespace WishApp.Models
         [Display(Name = "Flowers YES/NO")]
         public bool Flowers { get; set; }
 
-
+        //foreign key declaring
         [ForeignKey("User")]
         public int UserId { get; set; }
         public User User { get; set; }

@@ -46,11 +46,13 @@ namespace WishApp.Models
                 
             };
 
+            //iterate through list and add users to database
             foreach (var temp in users)
             {
                 context.Users.Add(temp);
             }
 
+            //save database changes
             context.SaveChanges();
 
             int UserNo = 1;
@@ -82,11 +84,13 @@ namespace WishApp.Models
                
             };
 
+            //iterate through list and add user preferences to database
             foreach (var temp in preferences)
             {
                 context.Preferences.Add(temp);
             }
 
+            //save database changes
             context.SaveChanges();
 
         }

@@ -9,9 +9,11 @@ namespace WishApp.Models
 {
     public class User
     {
+        //primary key declaring
         [Key]
         public int UserId { get; set; }
 
+        //property with Data Annotation
         [Required]
         [DataType(DataType.EmailAddress)]
         [StringLength(50, ErrorMessage = "No more than 50 characters allowed for e-mail")]

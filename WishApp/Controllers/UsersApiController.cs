@@ -29,14 +29,8 @@ namespace WishApp.Controllers
                         select p.User;
             //linq query to find data
 
-
             return query;
 
-                
-               
-           
-
-            
             //return new string[] { "Hooray", "Hooray" };
         }
         //find post by Id
@@ -44,9 +38,9 @@ namespace WishApp.Controllers
         public IHttpActionResult GetId(int Id)
         {
            
-                       // where p.Categories.CategoryName == "Seafood"
+            // where p.Categories.CategoryName == "Seafood"
             //select p;
-//IEnumerable<Product> products = query.ToList();
+            //IEnumerable<Product> products = query.ToList();
             //using(myDb)
             //{
             //    var m     (x => x.UserId == Id);

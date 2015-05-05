@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace WishApp.Controllers
 {
+    //Home Controller renamed to Extra Controller
     public class ExtraController : Controller
     {
         public ActionResult About()
