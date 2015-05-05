@@ -1,24 +1,30 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WishApp.Controllers;
+using WishApp.Models;
+using WishApp;
+
 
 namespace WishProjectTest
 {
     [TestClass]
-public class UnitTest1
-{
+    public class UnitTest1
+    {
+        [TestClass]
+        public class ProductControllerTest
+        {
+            [TestMethod]
+            public void TestDetailsView()
+            {
+                //create a controller instance
+                var controller = new UsersController();
+                //call the index method
+                var result = controller.Index();
+                //check does it return the index view
+                //not working assertion needs correcting
+                Assert.AreEqual("Index", result);
 
-    [TestMethod]            
-public void Withdraw_AmountMoreThanBalance_Throws()
-{
-    //string[] str = { "value1", "value2"};
-    // arrange
-    //UsersAPIController ctl = new UsersAPIController();
-    // act
-    //string[] actual = ct1.get();
-    // assert is handled by the ExpectedException
-    //Assert.AreEqual(str, actual);
+            }
+        }
+    }
 }
-}
-}
-
