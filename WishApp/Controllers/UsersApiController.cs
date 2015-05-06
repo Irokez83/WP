@@ -53,7 +53,7 @@ namespace WishApp.Controllers
             WishAppContext dbContext = new WishAppContext();
            
             var query = from p in dbContext.Preferences 
-                        where p.Occasions == Occasionals.Christmas
+                        where p.Occasions == Occasionals.Valentines
                         select new ValentinesUser()
                         {UserName = p.User.Email, Occ = p.Occasions.ToString(), Pref = p.UserPreference};
         
